@@ -1,0 +1,7 @@
+tabla persona -- se van a ingresar tanto  los 
+´proovederos como clientexs
+
+se distingiran con el campo tipo persona´para saber si es proovedor o cliente
+
+tabla persona
+seleccionamos tipo persona

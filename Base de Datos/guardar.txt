@@ -1,0 +1,8 @@
+se utilizo una plantilla y se organiza le header y footer y menu,
+adminlte
+
+CARPETA AJAX-- atchivo categoria.php
+si exist el objeto del formulario y lo recibo por el motodo post 
+
+
+switch

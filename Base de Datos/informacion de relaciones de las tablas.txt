@@ -1,0 +1,62 @@
+tabla categoria 
+idcategoria = primary key 
+
+en la tabla articulo, usamos esa primary key (idcategoria) la cual va a ser nuestra llave foranea de la tabla articulo.
+
+
+----------------------------------------------
+tabla ingreso, se crea relacion con tabla persona y con tabla usuario.
+idingreso =primary key
+
+idproovedor = clave foranea, esta se va a relacionar
+con la tabla persona, de la fila idpersona, no importa que tenga otro nombre debe tener el mismo dato
+
+idusuario = clave foranea, esta se va a relacionar con la tabla usuario, de la fila idusuario.
+----------------------------------------------------
+tabla detalle_ingreso
+idtetalle_ingreso = primary key
+idingreso = clave foranea
+idarticulo = clave foranea
+
+se crea relacion con la tabla ingreso
+mediante la columna idingreso 
+
+se crea relacion con la tabla articulo
+mediante el campo idarticulo
+--------------------------------------
+tabla venta
+idventa = primary key
+idusuario = clave foranea
+idcliente = clave foranea
+
+se crea clave foranea con la tabla persona con el campo idcliente de la tabla venta, y el idpersona de la tabla persona.
+
+se crea clave foranea con la tabla usuario con el campo idusuario de la tabla venta, y el idusuario de la tabla usuario
+--------------------------------------------------
+detalla_venta
+iddetalle_venta = primary key
+idarticulo = clave foranea 
+idventa = clave foranea
+
+se crea clave foranea con la tabla venta con el campo idventa de la tabla detalle_venta, y con el campo idventa de la tabla venta.
+
+se crea llave foranea con la tabla articulo con el campo idarticulo de la tabla detalle_venta, y con el campo idarticulo de la tabla articulo.
+---------------------------------------------------
+tabla permiso 
+idpermiso = primary key 
+
+esta tabla permiso se va a relacionar con la tabla usuariomediante la tabla usuario_permiso
+
+tabla usuario_permiso
+idusuario_permiso = primary key
+idusuario = llave foranea
+idpermiso = llave foranea
+
+se crea relacion desde la tabla usuario_permiso
+con la tabla usuario, de la columna idusuario de la tabla usuario_permiso, con la columna idusuario de la tabla usuario.
+
+
+se crea relacion desde la tabla usuario_permiso con la tabla permiso, se selecciona la columna idpermiso de la tabla usuario_permiso, con la columna idpermiso de la tabla permiso.
+-----------------------------------------
+
+
